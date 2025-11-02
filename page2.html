@@ -135,6 +135,31 @@
       cursor:pointer;
     }
 
+ /* Styl dla linku na dole */
+  .next-link {
+      display: block;
+      text-align: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* Efekt hover dla linku */
+  .next-link:hover {
+      background: rgba(255, 255, 255, 1);
+      color: #000;
+    }
+
+    /* Dla urządzeń mobilnych można dodać dodatkowe media query, jeśli potrzebujesz */
+  @media (max-width: 600px) {
+      .next-link {
+        font-size: 1em;
+        padding: 15px;
+      }
+    
     /* Small accessibility helpers */
   a{color:var(--accent)}
     @media (prefers-reduced-motion: reduce){
